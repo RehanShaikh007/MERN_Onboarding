@@ -5,8 +5,11 @@ import dotenv from "dotenv";
 import clientRoutes from "./routes/clientRoutes.js";
 import talentRoutes from "./routes/talentRoutes.js";
 import { seedSampleData } from "./utils/seedData.js";
+import path from "path"
 
 dotenv.config();
+
+const __dirname = path.resolve();
 
 const app = express();
 
@@ -14,12 +17,18 @@ app.use(cors({
     origin: 'http://localhost:5173', // Frontend URL
     credentials: true, // Allow credentials (cookies)
   }));
-  
+
 app.use(express.json());
 
 // API Routes
 app.use('/api/clients', clientRoutes);
 app.use('/api/talents', talentRoutes);
+
+app.use(express.static(path.join(__dirname, '/frontend/dist')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'));
+})
 
 // Health check endpoint
 app.get('/health', (req, res) => {
