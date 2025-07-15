@@ -59,7 +59,7 @@ npm install
    
    Create a `.env` file in the backend directory:
    ```env
-   PORT=5000
+   PORT=4000
    MONGO_URI=mongodb://localhost:27017/breadbutter_talent
    NODE_ENV=development
    ```
@@ -78,7 +78,7 @@ npm run dev
 
 7. **Access the application**
    - Frontend: http://localhost:5173
-   - Backend API: http://localhost:5000
+   - Backend API: http://localhost:4000
 
 ## 📊 Matchmaking Algorithm
 
