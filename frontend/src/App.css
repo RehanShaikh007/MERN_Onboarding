@@ -100,6 +100,7 @@ body {
   margin-bottom: 2rem;
   text-align: center;
   font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .form {
@@ -209,6 +210,7 @@ body {
   margin-bottom: 2rem;
   text-align: center;
   font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .requests-grid,
@@ -240,7 +242,7 @@ body {
 .request-card h3,
 .talent-card h3,
 .match-card h3 {
-  color: #2d3748;
+  color: #6E66C8;
   margin-bottom: 1rem;
   font-size: 1.3rem;
   font-weight: 700;

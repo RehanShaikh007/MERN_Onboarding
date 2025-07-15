@@ -629,7 +629,7 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1>🎨 BreadButter Talent Matchmaking</h1>
+        <h1>🎨 <span className='text-pink-500'>Bread</span><span className='text-cyan-700'>Butter</span> Talent Matchmaking</h1>
         <p>Connect clients with the perfect creative professionals</p>
       </header>
       <nav className="nav">
